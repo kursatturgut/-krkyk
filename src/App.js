@@ -1,24 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './commpenent/navbar/navbar';
+import { Headre } from './commpenent/header/headre';
+import { Facilitis } from './commpenent/facilities/facilitis';
+import { About } from './commpenent/about/about';
+import { Classtart } from './commpenent/classtrat/classtart';
+
+import { Team } from './commpenent/team/team';
+import { Testimonal } from './commpenent/testimonal/testimonal';
+import { Blog } from './commpenent/Blog/Blog';
+import { Footer } from './commpenent/Footer/Footer';
+import Contact from './commpenent/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    <Headre/>
+     <Facilitis/>
+     <About/>
+     <Classtart/>
+     <Testimonal/>
+     
+      <Team/>
+      <Blog/>
+      <Contact/>
+      <Footer/>
+
+    </>
+    
   );
 }
 
